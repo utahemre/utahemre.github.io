@@ -8,7 +8,7 @@ window.onload = function () {
         zoom: 6,
     });
     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '<a href="http://citysurf.com.tr" title="CitySurf" target="_blank">CitySurf</a>',
+        attribution: 'Leaflet.GeoJSONAutocomplete Plug-in Geojson Test Page',
         subdomains: ['a', 'b', 'c']
     }).addTo(map);
 
