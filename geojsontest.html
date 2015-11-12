@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="./leaflet-0.7.3/leaflet.css" rel="stylesheet">
-        <script src="./leaflet-0.7.3/leaflet.js"></script>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
         
         <script src="./javascript/geojsontest.js"></script>
 
@@ -31,9 +31,6 @@
     </head>
     <body>
         <div class="geojsonarea">
-            <div style="height: 20%">
-                <img src="image/citysurf_logo.png" alt=""/>
-            </div>
             <div style="margin-left: 25px;">Type your GeoJSON string to test.</div>
             <textarea id="textAreaTest" style="height: 60%;width: 80%;border-style: solid;border-width: 5px;margin: 25px;resize: none;" ></textarea>
             <button style="margin-left: 25px;" type="button" onclick="drawGeoJson()">Test it!</button>
