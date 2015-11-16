@@ -35,7 +35,7 @@ function drawGeoJson() {
         geojsonLayer = L.geoJson(geoJsonObject, {
             style: myStyle,
             onEachFeature: function (feature, layer) {
-                layer.bindPopup(feature.properties.popupDescription);
+                layer.bindPopup(feature.properties.popupContent);
             }
         });
 
