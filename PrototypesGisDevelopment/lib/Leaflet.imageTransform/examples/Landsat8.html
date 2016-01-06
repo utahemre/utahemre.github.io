@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Transform Plugin: Landsat Images</title>
+	<meta charset="utf-8" />
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="css/examples.css" />
+    
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+	<script src="../src/L.ImageTransform.js"></script>
+	<script src="data/landsat8.js"></script>
+</head>
+<body>
+	<div id="map"></div>
+    <div class="outer-info">
+        <span class="leaflet-bar info">Click on scene boundaries to see quicklooks</span>
+    </div>
+    
+	<script>
+		var osmUrl = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+			osm = new L.TileLayer(osmUrl, {maxZoom: 18}),
+			map = new L.Map('map', {layers: [osm], center: [40, 107], zoom: 5});
+        
+        var showOneScene = function(item) {
+            var minx = Math.min(item.x1, item.x2, item.x3, item.x4),
+                maxx = Math.max(item.x1, item.x2, item.x3, item.x4),
+                miny = Math.min(item.y1, item.y2, item.y3, item.y4),
+                maxy = Math.max(item.y1, item.y2, item.y3, item.y4),
+                anchors = [
+                    [maxy, minx],
+                    [maxy, maxx],
+                    [miny, maxx],
+                    [miny, minx]
+                ],
+                clip = [
+                    [item.y1, item.x1],
+                    [item.y2, item.x2],
+                    [item.y3, item.x3],
+                    [item.y4, item.x4]
+                ],
+                options = {
+                    clip: clip
+                };
+            
+            L.polygon(clip, {fillOpacity: 0, opacity: 1, weight: 2}).addTo(map).on('click', function() {
+                if (item._quicklook) {
+                    map.removeLayer(item._quicklook);
+                    item._quicklook = null;
+                } else {
+                    item._quicklook = L.imageTransform(item.url, anchors, options).addTo(map);
+                }
+            })
+        };
+        
+        for (var s = 0; s < landsat8Scenes.length; s++) {
+            showOneScene(landsat8Scenes[s]);
+        }
+        
+	</script>
+    
+    <a href="https://github.com/ScanEx/Leaflet.imageTransform" target="_blank">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">
+    </a>
+</body>
+</html>

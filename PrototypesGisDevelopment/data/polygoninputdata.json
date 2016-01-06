@@ -1,0 +1,310 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [36.00,41.00],
+                        [37.00,41.00],
+                        [37.00,40.00],
+                        [36.00,40.00],
+                        [36.00,41.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A1",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [37.00,41.00],
+                        [38.00,41.00],
+                        [38.00,40.00],
+                        [37.00,40.00],
+                        [37.00,41.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A2",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [38.00,41.00],
+                        [39.00,41.00],
+                        [39.00,40.00],
+                        [38.00,40.00],
+                        [38.00,41.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A3",
+                "categoryB": "B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [39.00,41.00],
+                        [40.00,41.00],
+                        [40.00,40.00],
+                        [39.00,40.00],
+                        [39.00,41.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A3",
+                "categoryB": "B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [36.00,40.00],
+                        [37.00,40.00],
+                        [37.00,39.00],
+                        [36.00,39.00],
+                        [36.00,40.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A1",
+                "categoryB": "B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [37.00,40.00],
+                        [38.00,40.00],
+                        [38.00,39.00],
+                        [37.00,39.00],
+                        [37.00,40.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A1",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [38.00,40.00],
+                        [39.00,40.00],
+                        [39.00,39.00],
+                        [38.00,39.00],
+                        [38.00,40.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A3",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [39.00,40.00],
+                        [40.00,40.00],
+                        [40.00,39.00],
+                        [39.00,39.00],
+                        [39.00,40.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A3",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [36.00,39.00],
+                        [37.00,39.00],
+                        [37.00,38.00],
+                        [36.00,38.00],
+                        [36.00,39.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A2",
+                "categoryB": "B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [37.00,39.00],
+                        [38.00,39.00],
+                        [38.00,38.00],
+                        [37.00,38.00],
+                        [37.00,39.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A2",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [38.00,39.00],
+                        [39.00,39.00],
+                        [39.00,38.00],
+                        [38.00,38.00],
+                        [38.00,39.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A3",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [39.00,39.00],
+                        [40.00,39.00],
+                        [40.00,38.00],
+                        [39.00,38.00],
+                        [39.00,39.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A1",
+                "categoryB": "B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [36.00,38.00],
+                        [37.00,38.00],
+                        [37.00,37.00],
+                        [36.00,37.00],
+                        [36.00,38.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A1",
+                "categoryB": "B1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [37.00,38.00],
+                        [38.00,38.00],
+                        [38.00,37.00],
+                        [37.00,37.00],
+                        [37.00,38.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A3",
+                "categoryB": "B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [38.00,38.00],
+                        [39.00,38.00],
+                        [39.00,37.00],
+                        [38.00,37.00],
+                        [38.00,38.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A2",
+                "categoryB": "B2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [39.00,38.00],
+                        [40.00,38.00],
+                        [40.00,37.00],
+                        [39.00,37.00],
+                        [39.00,38.00]
+                    ]
+                ]
+            },
+            "properties": {
+                "categoryA": "A3",
+                "categoryB": "B2"
+            }
+        }
+        
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        25.00,
+                        42.00
+                    ],
+                    [
+                        26.00,
+                        41.00
+                    ],
+                    [
+                        30.00,
+                        42.00
+                    ],
+                    [
+                        30.00,
+                        41.00
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Road"
+            }
+        }
+    ]
+}
