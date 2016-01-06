@@ -138,11 +138,12 @@ function getClip() {
                     rasterImage._bounds.getSouthWest(),
                     rasterImage._bounds.getSouthEast(),
                     rasterImage._bounds.getNorthEast()];
-
+                
                 var transformedImage = L.imageTransform(rasterImage._url, anchors, {clip: latLngCoordinates});
                 transformedImage.addTo(map);
                 map.removeLayer(rasterImage);
-
+                map.removeLayer(clip);
+                
             });
         }
     });
