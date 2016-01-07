@@ -29,12 +29,15 @@ function getTitleCaseInput() {
 function processTitleCase() {
 
     return linesArray.
-            filter(function (line) {
-                return line.indexOf("@") === -1 && line.indexOf("istanbul") === -1;
-            }).
             map(function (line) {
-                $("#outputText").append(line.toProperCase() + "<p>");
-                return line.toProperCase();
+                if (line.indexOf("@") === -1 && line.indexOf("istanbul") === -1) {
+                    $("#outputText").append(line.toProperCase() + "<p>");
+                    return line.toProperCase();
+                }
+                else {
+                    $("#outputText").append(line + "<p>");
+                    return line;
+                }
             });
 }
 
