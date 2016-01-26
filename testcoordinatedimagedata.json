@@ -150,6 +150,21 @@
                 "title": "Dikmen Valley",
                 "description": "Description about Dikmen Valley"
             }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.824627, 39.822935
+                ]
+            },
+            "properties": {
+                "imageLink": "./examples/image/eymir.jpg",
+                "thumbnailLink": "./examples/image/eymir_thumb.jpg",
+                "title": "Eymir Lake",
+                "description": "Description about Eymir Lake"
+            }
         }
         
     ]
