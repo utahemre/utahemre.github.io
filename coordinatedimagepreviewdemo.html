@@ -47,7 +47,8 @@
                 }).addTo(map);
 
                 var options = {
-                    imageServiceAddress: "./testcoordinatedimagedata.json"
+                    imageServiceAddress: "./testcoordinatedimagedata.json",
+					isOpen: true
                 };
                 $('#coordinatedImagePreviewControlContainer').CoordinatedImagePreviewControl(options);
 
@@ -58,7 +59,7 @@
     <body>
         <div id="map" class="map"></div>
 
-        <div id='coordinatedImagePreviewControlContainer' style="position: fixed;">
+        <div id='coordinatedImagePreviewControlContainer'>
         </div>
         <script src="./lib/lightbox2/dist/js/lightbox.min.js"></script>
 
